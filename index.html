@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="ibm-plex-mono-regular">
+    <div class="outer">
+      <div class="pokesprite">
+        <img src="" alt="pokemon sprite" id="pokemonSprite" />
+      </div>
+
+      <div class="input">
+        <form id="input">
+          <input
+            type="text"
+            id="pokeName"
+            placeholder="Pokemon Name"
+            required
+          />
+          <button onclick="fetchData()" type="submit" id="button">
+            Search
+          </button>
+        </form>
+      </div>
+
+      <div class="output">
+          <p id="name"></p>
+          <br />
+          <div>
+            <table>
+              <th>Base Stats</th>
+              <tr>
+                <td>HP:</td>
+                <td id="hp"></td>
+              </tr>
+              <tr>
+                <td>Attack:</td>
+                <td id="attack"></td>
+              </tr>
+              <tr>
+                <td>Defense:</td>
+                <td id="defense"></td>
+              </tr>
+              <tr>
+                <td>Sp. Attack:</td>
+                <td id="special-attack"></td>
+              </tr>
+              <tr>
+                <td>Sp. Defense:</td>
+                <td id="special-defense"></td>
+              </tr>
+              <tr>
+                <td>Speed:</td>
+                <td id="speed" class="speed"></td>
+              </tr>
+            </table>
+          </div>
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <input type="text" id="pokeName" placeholder="Pokemon Name">
+<button onclick="fetchData()" type="submit" id="button"></button> -->
